@@ -20,4 +20,12 @@ const VideoCard = ({ videoMetaData }) => {
     )
 }
 
-export default VideoCard
+export const HigherOrderVideoCard = ({ videoMetaData }) => {
+    return (<div>
+        <p className='absolute p-3 bg-green-300 rounded-md font-bold'>Promoted</p>
+        <VideoCard videoMetaData={videoMetaData} />
+    </div>)
+}
+
+
+export default VideoCard;
